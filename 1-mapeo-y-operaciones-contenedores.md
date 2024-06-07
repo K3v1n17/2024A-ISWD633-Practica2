@@ -43,15 +43,21 @@ Se utiliza para mostrar el contenido de un directorio, es decir, lista los archi
 El argumento -l (letra ele minúscula) activa la visualización detallada de los archivos y directorios. Cuando se utiliza -l, ls muestra información como permisos, propietario, grupo, tamaño, fecha de modificación y nombre del archivo o directorio.
 
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
+```
+docker exec mi-jenkins ls -l 
+```
 # COMPLETAR
+
 # COLOCAR UNA CAPTURA DE PANTALLA
+
+![Imagen](imagenes/jenkins.PNG)
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
 El comando **docker exec** te permite acceder a la sesión shell de un contenedor en ejecución, estarás dentro del contenedor y podrás ejecutar comandos como si estuvieras en una terminal normal. 
 Para saber qué comando utilizar para abrir una terminal dentro de un contenedor, es útil conocer la imagen base del contenedor, ya que diferentes imágenes pueden usar diferentes shells o comandos para abrir una terminal. Puedes verificar la documentación de la imagen del contenedor en Docker Hub o en el repositorio de la imagen para obtener información específica sobre cómo abrir una terminal en esa imagen.
 - Para imágenes basadas en Debian o Ubuntu, puedes probar con bash.
 - Para imágenes basadas en Alpine Linux, puedes probar con sh.
-![Imagen](imagenes/jenkins-i.PNG)
+![Imagen](imagenes/imagen-ls.png)
 ```
 docker exec -i <nombre contenedor> <programa o comando>
 ```
