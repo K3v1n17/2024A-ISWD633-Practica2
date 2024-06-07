@@ -49,7 +49,7 @@ docker exec mi-jenkins ls -l
 # COMPLETAR
 
 # COLOCAR UNA CAPTURA DE PANTALLA
-
+![Imagen](imagenes/imagen-ls.png)
 ![Imagen](imagenes/jenkins.PNG)
 
 ### Para ejecutar un shell interactivo en un contenedor de Docker especificado.
@@ -57,7 +57,7 @@ El comando **docker exec** te permite acceder a la sesión shell de un contenedo
 Para saber qué comando utilizar para abrir una terminal dentro de un contenedor, es útil conocer la imagen base del contenedor, ya que diferentes imágenes pueden usar diferentes shells o comandos para abrir una terminal. Puedes verificar la documentación de la imagen del contenedor en Docker Hub o en el repositorio de la imagen para obtener información específica sobre cómo abrir una terminal en esa imagen.
 - Para imágenes basadas en Debian o Ubuntu, puedes probar con bash.
 - Para imágenes basadas en Alpine Linux, puedes probar con sh.
-![Imagen](imagenes/imagen-ls.png)
+
 ```
 docker exec -i <nombre contenedor> <programa o comando>
 ```
@@ -85,6 +85,8 @@ Ejecutar
 whoami
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA
+![Imagen](imagenes/bash.png)
+
 
 **Si se visualiza el mensaje command not found, considerar**
 El problema se debe a que no se ha asignado un terminal de salida al contenedor al ejecutar el comando. Cuando usas docker exec -i jenkins-server /bin/bash en Windows, el comando se ejecuta pero no hay un terminal asignado para mostrar la salida del comando ls.
