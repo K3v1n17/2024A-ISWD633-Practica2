@@ -21,11 +21,13 @@ docker run -d --name mi-jenkins --publish published=8080,target=8080 --publish p
 ```
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 
-![docker-images](imagenes/docker-images.png)
+![Imagen](imagenes/Captura-jenkins.png)
+
 ### ¿Cómo obtener la contraseña solicitada?
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 
 ![Imagen](imagenes/jenkins.PNG)
+
 
 # Operaciones con contenedores
 
@@ -35,7 +37,11 @@ docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
 # COMPLETAR
 ### ¿Para qué se usa el comando ls?
+Se utiliza para mostrar el contenido de un directorio, es decir, lista los archivos y subdirectorios en el directorio actual por defecto, o en un directorio específico si se le proporciona un argumento.
+
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+El argumento -l (letra ele minúscula) activa la visualización detallada de los archivos y directorios. Cuando se utiliza -l, ls muestra información como permisos, propietario, grupo, tamaño, fecha de modificación y nombre del archivo o directorio.
+
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
 # COMPLETAR
 # COLOCAR UNA CAPTURA DE PANTALLA
