@@ -62,4 +62,11 @@ docker run -d --name mi_mysql --env-file=env.txt -p 3306:3306 mysql:8
 ### ¿Qué bases de datos existen en el contenedor creado?
 # COMPLETAR
 
+Existen las siguientes 4 bases de datos:
+
+information_schema: Proporciona metadatos sobre las bases de datos MySQL y sus objetos.
+mysql: Gestiona los usuarios, privilegios y configuraciones del servidor MySQL.
+performance_schema: Almacena estadísticas de rendimiento sobre el servidor MySQL.
+sys: Proporciona vistas y funciones para la gestión y diagnóstico del rendimiento de MySQL.
+
 
