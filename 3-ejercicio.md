@@ -10,9 +10,9 @@ docker run -d --name mi_postgres postgres:11.21-alpine3.17
 # COMPLETAR
 
 La figura presenta el esquema creado en donde los puertos son:
-- a: (completar con el valor)
-- b: (completar con el valor)
-- c: (completar con el valor)
+- a: (80)
+- b: (8080)
+- c: (5432)
 
 ![Imagen](imagenes/esquema-ejercicio3.PNG)
 
