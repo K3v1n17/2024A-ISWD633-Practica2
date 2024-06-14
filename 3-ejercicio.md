@@ -11,7 +11,7 @@ docker run -d --name mi_postgres postgres:11.21-alpine3.17
 
 La figura presenta el esquema creado en donde los puertos son:
 - a: (80)
-- b: (8080)
+- b: (80)
 - c: (5432)
 
 ![Imagen](imagenes/esquema-ejercicio3.PNG)
