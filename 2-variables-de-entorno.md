@@ -52,11 +52,14 @@ Es necesario especificar la ruta absoluta del archivo si este se encuentra en un
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
 # COMPLETAR
 
-```docker run -d --name mi_mysql --env-file=env.txt -p 3306:3306 mysql:8
+```
+docker run -d --name mi_mysql --env-file=env.txt -p 3306:3306 mysql:8
 ```
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
-
+![Imagen](imagenes/env.png)
 
 ### ¿Qué bases de datos existen en el contenedor creado?
 # COMPLETAR
+
+
