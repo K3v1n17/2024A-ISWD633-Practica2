@@ -1,6 +1,7 @@
 # Variables de Entorno
 ### ¿Qué son las variables de entorno
 # COMPLETAR
+Las variables de entorno son valores dinámicos que pueden afectar el comportamiento de los procesos en un sistema operativo. Son una forma de pasar información al software y configuraciones que se ejecutan en el sistema, sin necesidad de modificar el código de los programas.
 
 ### Para crear un contenedor con variables de entorno
 
@@ -11,22 +12,29 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 ### Crear un contenedor a partir de la imagen de nginx:alpine con las siguientes variables de entorno: username y role. Para la variable de entorno rol asignar el valor admin.
 docker run -d --name mi-nginx -e username=user -e role=admin nginx:alpine
 # COMPLETAR
+Las variables de entorno son valores dinámicos que pueden afectar el comportamiento de los procesos en un sistema operativo. Son una forma de pasar información al software y configuraciones que se ejecutan en el sistema, sin necesidad de modificar el código de los programas.
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
 ![Imagen](imagenes/variables.png)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
-# COMPLETAR
+```
+docker run --name mi_mysql  -p 3306:3306 -d mysql:8
+```
 
 ### ¿El contenedor se está ejecutando?
-# COMPLETAR
+No , el contenedor no se ejecuta 
 
 ### Identificar el problema
-# COMPLETAR
+
+El error se produce al intentar iniciar un contenedor de MySQL sin especificar las variables de entorno necesarias para la configuración de la contraseña del usuario root
+
 
 ### Eliminar el contenedor creado con mysql:8 
 # COMPLETAR
-
+```
+docker rm mi_mysql
+```
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
 - Centralización: Todas las configuraciones importantes se centralizan en un solo lugar, lo que facilita la gestión y auditoría de las configuraciones.
